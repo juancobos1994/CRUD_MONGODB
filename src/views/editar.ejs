@@ -1,0 +1,379 @@
+<%- include ('partials/_header'); %>
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-4"></div>
+  
+      <div class="col-md-7">
+          <div class="col-md-2"></div>
+          <div class="col-md-11">
+              <h2>EDITAR VUELO</h2> 
+          </div>
+          <p></p>			
+      </div>
+    </div>
+      
+      <!--FORM-->
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+  
+        <div class="col-md-10">
+          <div class="card">
+            <div class="card-body">
+              <form action="/editar/<%= flight._id %>" method="post">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                      <h4>Year: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Year" placeholder="<%= flight.Year %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                      <h4>Month: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Month" placeholder="<%= flight.Month %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    
+                    <div class="col-md-3">
+                      <h4>DayofMonth: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="DayofMonth" placeholder="<%= flight.DayofMonth %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DayOfWeek: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="DayOfWeek" placeholder="<%= flight.DayOfWeek %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DepTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="DepTime" placeholder="<%= flight.DepTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSDepTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="CRSDepTime" placeholder="<%= flight.CRSDepTime %>">
+                    </div> 
+                  </div>
+                </div>
+  
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ArrTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="ArrTime" placeholder="<%= flight.ArrTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSArrTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="CRSArrTime" placeholder="<%= flight.CRSArrTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>UniqueCarrier: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="UniqueCarrier" placeholder="<%= flight.UniqueCarrier %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>FlightNum: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="FlightNum" placeholder="<%= flight.FlightNum %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TailNum: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="TailNum" placeholder="<%= flight.TailNum %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ActualElapsedTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="ActualElapsedTime" placeholder="<%= flight.ActualElapsedTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSElapsedTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="CRSElapsedTime" placeholder="<%= flight.CRSElapsedTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>AirTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="AirTime" placeholder="<%= flight.AirTime %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ArrDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="ArrDelay" placeholder="<%= flight.ArrDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DepDelay:</h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="DepDelay" placeholder="<%= flight.DepDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Origin </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Origin" placeholder="<%= flight.Origin %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Dest: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Dest" placeholder="<%= flight.Dest %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Distance: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Distance" placeholder="<%= flight.Distance %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TaxiIn: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="TaxiIn" placeholder="<%= flight.TaxiIn %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TaxiOut: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="TaxiOut" placeholder="<%= flight.TaxiOut %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Cancelled: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Cancelled" placeholder="<%= flight.Cancelled %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CancellationCode: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="CancellationCode" placeholder="<%= flight.CancellationCode %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Diverted: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="Diverted" placeholder="<%= flight.Diverted %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">               
+                      <h4>CarrierDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="CarrierDelay" placeholder="<%= flight.CarrierDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>WeatherDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="WeatherDelay" placeholder="<%= flight.WeatherDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>NASDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="NASDelay" placeholder="<%= flight.NASDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>SecurityDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="SecurityDelay" placeholder="<%= flight.SecurityDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>LateAircraftDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                      <input class="form-control" type="text" name="LateAircraftDelay" placeholder="<%= flight.LateAircraftDelay %>">
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-5">
+                    </div>
+                    <div class="col-md-3">
+                      <button class="btn btn-primary" type="submit">
+                        EDITAR
+                      </button>
+                    </div> 
+                  </div>
+                </div>
+                
+  
+  
+              </form>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+        
+        
+  
+      </div>
+
+<%- include ('partials/_footer'); %>

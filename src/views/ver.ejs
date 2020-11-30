@@ -1,0 +1,366 @@
+<%- include ('partials/_header'); %>
+
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-4"></div>
+  
+      <div class="col-md-7">
+          <div class="col-md-2"></div>
+          <div class="col-md-11">
+              <h2>VISUALIZAR VUELO</h2> 
+          </div>
+          <p></p>			
+      </div>
+    </div>
+      
+      <!--FORM-->
+      <div class="row">
+        <div class="col-md-1">
+        </div>
+  
+        <div class="col-md-10">
+          <div class="card">
+            <div class="card-body">
+              <form action="/add" method="post">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                      <h4>Year: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Year %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="col-md-2">
+                      <h4>Month: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Month %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    
+                    <div class="col-md-3">
+                      <h4>DayofMonth: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.DayofMonth %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DayOfWeek: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.DayOfWeek %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DepTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.DepTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSDepTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.CRSDepTime %></label>
+                    </div> 
+                  </div>
+                </div>
+  
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ArrTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.ArrTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSArrTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.CRSArrTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>UniqueCarrier: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.UniqueCarrie %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>FlightNum: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.FlightNum %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TailNum: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.TailNum %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ActualElapsedTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.ActualElapsedTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CRSElapsedTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.CRSElapsedTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>AirTime: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.AirTime %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>ArrDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.ArrDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>DepDelay:</h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.DepDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Origin </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Origin %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Dest: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Dest %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Distance: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Distance %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TaxiIn: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.TaxiIn %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>TaxiOut: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.TaxiOut %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Cancelled: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Cancelled %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>CancellationCode: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.CancellationCode %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>Diverted: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.Diverted %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">               
+                      <h4>CarrierDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.CarrierDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>WeatherDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.WeatherDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>NASDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.NASDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>SecurityDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.SecurityDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <h4>LateAircraftDelay: </h4>
+                    </div>
+                    <div class="col-md-9">
+                        <label ><%= flight.LateAircraftDelay %></label>
+                    </div> 
+                  </div>
+                </div>
+                <hr>                
+  
+              </form>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+        
+        
+  
+      </div>
+
+<%- include ('partials/_footer'); %>

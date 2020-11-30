@@ -1,0 +1,75 @@
+<%- include ('partials/_header'); %>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3"></div>
+
+        <div class="col-md-7">
+            <div class="col-md-2"></div>
+            <div class="col-md-11">
+                <h2>Datos de Vuelos » Detalles del Vuelo</h2> 
+            </div>
+            
+            <p></p>			
+        </div>
+
+    </div>
+    <div class="row">
+    <!-- LIST -->
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                <th>Year</th>
+                <th>Month</th>
+                <th>DayofMonth</th>
+                <th>DayOfWeek</th>
+                <th>DepTime</th>
+                <th>Origin</th>
+                <th>Dest</th>
+                <th>Distance</th>
+                <th>AirTime</th>
+                <th>Opciones</th>
+                </tr>
+          </thead>
+          <tbody>
+            <% for(var i=0; i < 50; i++) { %>
+                <tr>
+                  <td><strong><%- (flights[i].Year); %></strong></td>
+                  <td><%= flights[i].Month %></td>
+                  <td><%= flights[i].DayofMonth %></td>
+                  <td><%= flights[i].DayOfWeek %></td>
+                  <td><%= flights[i].DepTime %></td>
+                  <td><%= flights[i].Origin %></td>
+                  <td><%= flights[i].Dest %></td>
+                  <td><%= flights[i].Distance %></td>
+                  <td><%= flights[i].AirTime %></td>
+
+                  <td>
+                      <a href="/ver/<%= flights[i]._id %>">Visualizar</a> 
+                      <a href="/editar/<%= flights[i]._id %>">Editar</a>
+                      <a href="/eliminar/<%= flights[i]._id %>" >Eliminar</a>
+                  </td>
+                </tr>
+              <% } %>
+            
+          </tbody>
+        </table>
+  
+        <section class="paginacion">
+			<ul>
+				<li><a href="" class="active">Inicio</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">Fin</a></li>
+			</ul>
+		</section>
+
+      </div>
+  </div>
+
+
+<%- include ('partials/_footer'); %>
